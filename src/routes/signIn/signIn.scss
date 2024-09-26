@@ -1,0 +1,116 @@
+.signIn {
+  display: flex;
+  height: 100%;
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      display: flex;
+      justify-content: flex-start;
+      flex: 1;
+      font-size: 64px;
+      font-weight: 500;
+      width: 100%;
+    }
+
+    .email {
+      width: 100%;
+      flex: 4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 20%;
+      form {
+        height: 80%;
+        width: 80%;
+        background-color: rgba(50, 48, 156, 0.4);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+
+        input {
+          padding-left: 20px;
+          background-color: initial;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          flex: 2;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-color: #fcf5f3;
+          font-size: 20px;
+          &::placeholder {
+            font-family: "Courier New", Courier, monospace;
+            padding-left: 20px;
+            font-size: 15px;
+            color: black;
+            font-weight: 400;
+          }
+        }
+        .emailIn {
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+        }
+        button {
+          flex: 1;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border: none;
+          border-style: none;
+          background-color: inherit;
+          h4 {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 20px;
+            transition: all 0.5s ease;
+            &:hover {
+              scale: 1.5;
+            }
+          }
+        }
+      }
+    }
+    p {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 100;
+    }
+    .icons {
+      flex: 2;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1;
+        img {
+          height: 35%;
+          width: 35%;
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 60%;
+    }
+  }
+}

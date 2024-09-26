@@ -1,0 +1,92 @@
+.contact {
+  display: flex;
+  height: 100%;
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+
+    h1 {
+      flex: 1;
+      font-size: 64px;
+      font-weight: 500;
+      width: 100%;
+    }
+
+    .email {
+      width: 100%;
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      form {
+        height: 70%;
+        width: 60%;
+        background-color: rgba(50, 48, 156, 0.4);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+
+        input {
+          background-color: initial;
+          flex: 2;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-color: #fcf5f3;
+          padding-left: 20px;
+          font-size: 20px;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          &::placeholder {
+            font-family: "Courier New", Courier, monospace;
+            padding-left: 20px;
+            font-size: 15px;
+            color: black;
+            font-weight: 400;
+          }
+        }
+        .emailIn {
+          border-top-right-radius: 30px;
+          border-top-left-radius: 30px;
+        }
+        button {
+          flex: 1;
+          border-bottom-right-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border: none;
+          border-style: none;
+          background-color: inherit;
+          h4 {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 20px;
+            transition: all 0.5s ease;
+            &:hover {
+              scale: 1.5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .linkContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    display: flex;
+    flex-direction: column;
+    .links {
+      align-items: center;
+      flex: 1;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+    }
+    .env {
+      padding: 50px 30px 150px 30px;
+      flex: 5;
+
+      width: 100%;
+    }
+  }
+}
